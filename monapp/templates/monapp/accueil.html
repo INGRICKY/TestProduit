@@ -1,0 +1,13 @@
+{% extends 'monapp/baseRetour.html' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block content %}
+    <h1 class="text-center">Bienvenue sur notre application Django 🐍</h1>
+    <p class="text-center lead">Gérez vos produits simplement et efficacement.</p>
+
+    <div class="text-center mt-4">
+        <a href="{% url 'liste_produits' %}" class="btn btn-success btn-lg m-2">Voir les produits</a>
+        <a href="{% url 'ajouter_produit' %}" class="btn btn-primary btn-lg m-2">Ajouter un produit</a>
+    </div>
+{% endblock %}
